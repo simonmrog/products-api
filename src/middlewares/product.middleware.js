@@ -3,6 +3,7 @@ const Joi = require("@hapi/joi");
 const product = Joi.object({
   _id: Joi.string().optional(),
   name: Joi.string().required(),
+  description: Joi.string().optional(),
   category: Joi.string().required(),
   price: Joi.number().required(),
   availableUnits: Joi.number().required(),
